@@ -12,8 +12,11 @@ WORKDIR /app
 RUN npm install --production
 ADD assets /
 
+ENV FACTORIO_DIR /usr/local/factorio
+
 EXPOSE 8000
 EXPOSE 34197/udp
 VOLUME /usr/local/factorio/saves
+VOLUME /usr/local/factorio/mods
 
 CMD node /app
