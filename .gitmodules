@@ -1,0 +1,3 @@
+[submodule "assets/app"]
+	path = assets/app
+	url = https://github.com/jjclark1982/factorio-control-panel.git
