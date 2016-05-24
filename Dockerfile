@@ -14,8 +14,12 @@ ADD assets /
 
 ENV FACTORIO_DIR /usr/local/factorio
 
+ENV PORT 8000
 EXPOSE 8000
+
+ENV FACTORIO_PORT 34197
 EXPOSE 34197/udp
+
 VOLUME /usr/local/factorio/saves
 VOLUME /usr/local/factorio/mods
 
